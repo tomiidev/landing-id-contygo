@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { API_LOCAL } from "./apis";
+import { API_URL } from "./apis";
 
 const RegisterPayment = () => {
     useEffect(() => {
@@ -24,7 +24,7 @@ const RegisterPayment = () => {
             console.log("Enviando datos al backend:", paymentData);
 
             // Enviar los datos al backend
-            fetch(`${API_LOCAL}/register-payment`, {
+            fetch(`${API_URL}/register-payment`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
